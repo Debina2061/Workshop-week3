@@ -36,18 +36,18 @@ public class NullOperations
 {
     public void PerformNullChecks()
     {
-        // Step 1: Declare a string variable and assign null
+        
         string username = null;
 
-        // Step 2: Use Ternary Operator (? :) to check for null
+       
         string message = (username == null) ? "Username is not available" : username;
         Console.WriteLine(message);
 
-        // Step 3: Use Null-Coalescing Operator (??)
+        
         string result = username ?? "Default Username (using ??)";
         Console.WriteLine(result);
 
-        // Step 4: Use Null-Coalescing Assignment Operator (??=)
+        
         username ??= "AssignedUsername";
         Console.WriteLine("Updated Username: " + username);
     }
